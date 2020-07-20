@@ -21,17 +21,22 @@
 컴퓨터 비전처리를 위한 파이썬라이브러리인 OpenCV에 대한 주요 내용들과 기능들을 중심으로 본 프로젝트에서 활용되는 내용들을 중심으로 주요 기능들의 실제 사용방법에 대해서 배워보는 주피터 노트북이 포함되어 있습니다. 이와 아울러, 컴퓨터 카메라를 통해 저장된 연속된 이미지들을 병합해서 하나의 영상으로 변환하는 과정에 대한 주피터 노트북도 함께 포함되어 있습니다(주행시 캡쳐된 영상의 동영상 변황에 유용하게 활용가능합니다). 
 
 ### 03-Donkeycar-Training-Colab
+Donkeycar 드라이버의 주행 행동모방(Behavior Cloning)을 통해 수집된  주행 데이타를 사용해서 딥러닝 기반의 주행모델을 학습하는 주피터 노트북이 폴더 내에 있으며, Donkeycar Simulator(시뮬레이터)상에서의 자율주행을 테스트할 수 있도록 제공되는 학습데이타를 사용해서 주행모델을 학습하는 주피터 노트북도 함께 포함됩니다.
 
-### 04-DeepPiCar-NVIDIA-AutoLaneFollow-Colab
+### 04-DeepPiCar-OpenCV-AutoLaneFollow-Colab
+DeepPiCar의 컴퓨터비전을 활용한 openCV기반 주행 영상 이미지로부터 주행차선을 인식하고, 이를 통해 차량의 주행각도를 변경하여 자율을 하는 DeepPiCar의 수행 코드를 단계적으로 실행할 수 있는 주피터 노트북이 포함되어 있습니다.
 
-### 05-EMPV1-AutoLaneFollow-Colab
+### 05-DeepPiCar-NVIDIA-AutoLaneFollow-Colab
 
-### 11-EMPV1-DPCAR
+### 06-EMPV1-AutoLaneFollow-Colab
 
-### 99-DONKEYCAR_PARTS
+### 11-DONKEYCAR_PARTS
+
+### 21-EMPV1-DPCAR
 
 
-# Copyrights 2020
+
+## Copyrights 2020
 
 * Donkeycar는 https://github.com/autorope/donkeycar 를 참고하였습니다.
 * DeepPiCar는 https://github.com/dctian/DeepPiCar 를 참고하였습니다. 
