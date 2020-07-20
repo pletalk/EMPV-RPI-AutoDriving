@@ -27,9 +27,10 @@ Donkeycar 드라이버의 주행 행동모방(Behavior Cloning)을 통해 수집
 DeepPiCar의 컴퓨터비전을 활용한 openCV기반 주행 영상 이미지로부터 주행차선을 인식하고, 이를 통해 차량의 주행각도를 변경하여 자율을 하는 DeepPiCar의 수행 코드를 단계적으로 실행할 수 있는 주피터 노트북이 포함되어 있습니다.
 
 ### 05-DeepPiCar-NVIDIA-AutoLaneFollow-Colab
-DeepPiCar의 OpenCV기반 자동주행 데이타에 기반하여 NVIDIA사의 CNN기반 딥러닝 주행모뎋학습의 과정들을 따라서 배워볼 수 있는 주피터노트북이 포함되어 있으며, 이와함께 주행 데이타 이미지에 대한 다양한  변환(transform)과정을 통해  학습데이타를 증강(augment)시켜서 학습량을 증가하여 주행모델을 학습하는 과정에 대한 주피터 노트북도 함께 실행해볼 수 있습니다.
+DeepPiCar의 OpenCV기반 자동주행 데이타에 기반하여 NVIDIA사의 CNN기반 딥러닝 주행모델학습의 과정들을 따라서 배워볼 수 있는 주피터노트북이 포함되어 있으며, 이와함께 주행 데이타 이미지에 대한 다양한  변환(transform)과정을 통해  학습데이타를 증강(augment)시켜서 학습량을 증가하여 주행모델을 학습하는 과정에 대한 주피터 노트북도 함께 실행해볼 수 있습니다.
 
 ### 06-EMPV1-AutoLaneFollow-Colab
+EMPV1의 OpenCV기반 자동주행 데이타에 기반하여 NVIDIA사의 CNN기반 딥러닝 주행모델학습의 과정들을 DeepPiCar의 경우도 동일하게 따라 배워볼 수 있는 주피터노트북이 포함되어 있으며, 이와함께 주행 데이타 이미지에 대한 다양한  변환(transform)과정을 통해  학습데이타를 증강(augment)시켜서 학습량을 증가하여 주행모델을 학습하는 과정에 대한 주피터 노트북도 함께 실행해볼 수 있습니다.
 
 ### 11-DONKEYCAR_PARTS
 Donkeycar에 기반하여 DeepPiCar의 다양한 기능들 - OpenCV기반 자동 차선 탐지 및 주행, NVIDIA 딥러닝 모델 기반의 End-To-End 자율 주행 - 을 구현하기 위해서 수정된 Donkeycar의 기능 모듈들의 수정된 코드들이 들어있습니다. Donkeycar를 PC/노트북에 설치하고, 이 폴더의 파일들을 donkeycar/donkeycar/parts 디렉토리에 복사합니다(기존 Donkeycar코드를 사용하는 경우, DeepPiCar의 기능들이 동작하지 않습니다).
