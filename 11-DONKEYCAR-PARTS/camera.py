@@ -25,16 +25,19 @@ class PiCamera(object):
         self.verbose = verbose
         self.mode = mode
 
-        # deepicar의 경우에만 dpcar_opt가 유효
-        if dpcar_opt != None :
-            self.dpcar_opt=dpcar_opt
-        else:
-            self.dpcar_opt = { 'org' : True, 'hsv' : False, 'edges' : False, 'lanes': False }
-        print("dpcar_option=>",self.dpcar_opt)
-
-        if self.mode == 'deepicar':
+        if self.mode == 'donkey':
+            self.dpcar_opt = { 'org' : False, 'hsv' : False, 'edges' : False, 'lanes': False }
+        elif self.mode == 'deepicar':
+            # deepicar의 경우에만 dpcar_opt가 유효
+            if dpcar_opt != None :
+                self.dpcar_opt=dpcar_opt
+            else:
+                self.dpcar_opt = { 'org' : True, 'hsv' : False, 'edges' : False, 'lanes': False }
+            print("dpcar_option=>",self.dpcar_opt)
+            # landfollower코드도 설정
             self.lane_follower = HandCodedLaneFollower()
 
+        # 
         resolution = (image_w, image_h)
         # initialize the camera and stream
         self.camera = PiCamera() #PiCamera gets resolution (height, width)
