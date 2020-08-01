@@ -54,6 +54,10 @@ EMPV1과 관련하여 유용한 utils 폴더, 구동 테스팅을 위한 test_pr
 위의 프로그램들은 동일한 이름을 가진 bash 파일(확장자 .sh)을 통해 실행가능합니다. Bash 파일을 열어보면, 명령행에 사용가능한 인수들을 확인하실 수 있습니다.
 
 
+## 문서 업데이트
+* 2020-08-01 주피터노트북의 수행 테스팅 및 코드 추가 및 변경 (donkeycar+deeppicar)
+
+
 ## Copyrights 2020
 
 * Donkeycar는 https://github.com/autorope/donkeycar 를 참고하였습니다.
