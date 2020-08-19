@@ -121,7 +121,8 @@ class PiCamera(object):
                 cv2.imshow("ORIGIN Frame",rgb_image)
 
             if self.mode == 'deepicar':
-                hsv_image = self.lane_follower.cvtRGB2HSV(rgb_image) #BGR frame input
+                #hsv_image = self.lane_follower.cvtRGB2HSV(rgb_image) #BGR frame input
+                hsv_image = self.lane_follower.cvtBGR2HSV(self.frame) #BGR frame input
                 edge_detected_image = self.lane_follower.detect_lane_edges(hsv_image)
                 combo_image = self.lane_follower.detect_follow_lanes(rgb_image,edge_detected_image)
 

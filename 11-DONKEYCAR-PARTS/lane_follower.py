@@ -18,6 +18,9 @@ class HandCodedLaneFollower(object):
     def cvtRGB2HSV(self, frame):
         return convert_rgb2hsv(frame) 
 
+    def cvtBGR2HSV(self, frame):
+        return convert_bgr2hsv(frame) 
+
     def detect_lane_edges(self, hsv_image):
         return detect_edges(hsv_image) 
    
@@ -86,6 +89,14 @@ def detect_lane_from_edges(frame, edges):
 def convert_rgb2hsv(frame):   # y=yellow, b=blue, g=green
     # filter for blue lane lines
     hsv = cv2.cvtColor(frame, cv2.COLOR_RGB2HSV)
+    show_image("hsv", hsv)
+
+    return hsv
+
+
+def convert_bgr2hsv(frame):   # y=yellow, b=blue, g=green
+    # filter for blue lane lines
+    hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
     show_image("hsv", hsv)
 
     return hsv
