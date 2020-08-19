@@ -90,6 +90,22 @@ def convert_rgb2hsv(frame):   # y=yellow, b=blue, g=green
 
     return hsv
 
+'''
+    Hue range is [0,179], Saturation range is [0,255] and Value range is [0,255].
+
+    YELLO
+    upper = np.array([30,255,255])
+    lower = np.array([20,100,100])
+
+    BLUE
+    upper = np.array([130,255,255])
+    lower = np.array([110,50,50])
+
+    https://www.tydac.ch/color/
+    http://www.workwithcolor.com/yellow-color-hue-range-01.htm
+    http://www.flatuicolorpicker.com/red-hsv-color-model/
+
+'''
 
 def detect_edges(hsv_image, color_code = 'g'):
     if color_code == 'y':
@@ -101,7 +117,7 @@ def detect_edges(hsv_image, color_code = 'g'):
     elif color_code == 'r':
         lower = np.array([110,50,50])
         upper = np.array([130,255,255])
-    else:
+    elif color_code == 'b':
         lower = np.array([30, 40, 0])
         upper = np.array([150, 255, 255])
 
